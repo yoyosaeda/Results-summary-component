@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+}
+:root {
+    --main-color: 
+}
+body {
+    font-family: "Hanken Grotesk", sans-serif;
+    background-color: white;
+}
+
+.container {
+    width: 600px;
+    height: 450px;
+    margin: 200px auto;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    box-shadow: 0px 1px 60px 1px gray;
+}
+.container .left,
+.container .right {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.container .left {
+    align-items: center;
+    background-image: linear-gradient(180deg, hsl(252, 100%, 67%) 10%, hsl(241, 81%, 54%));
+    justify-content: space-between;
+    border-radius: 25px;
+}
+.container .left .title-text {
+    color: #ccc;
+    font-size: 19px;
+}
+.container .left .circle {
+    background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .left .circle .text h2 {
+    color: white;
+    font-size: 60px;
+}
+.container .left .circle .text p {
+    text-align: center;
+    color: #bbb;
+}
+.container .left .foot-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.container .left .foot-text h3 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+.container .left .foot-text p {
+    color: #bbb;
+    word-spacing: 1px;
+    font-size: 15px;
+}
+.container .right {
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-left: 25px;
+}
+.container .right .title-text {
+    font-size: 19px;
+}
+.container .right .boxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+.container .right .boxes-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding: 0px 20px;
+    margin: 7px 0;
+}
+.container .right .boxes-content .i-text {
+    display: flex;
+}
+.container .right .boxes-content .i-text i {
+    margin-right: 10px;
+}
+
+.container .right .boxes .boxes-content:nth-child(1) {
+    color: hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.09);
+    border-radius: 10px;
+}
+.container .right .boxes .boxes-content:nth-child(2) {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.09);
+    border-radius: 10px;
+}
+.container .right .boxes .boxes-content:nth-child(3) {
+    color: hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.09);
+    border-radius: 10px;
+}
+.container .right .boxes .boxes-content:nth-child(4) {
+    color: hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.09);
+    border-radius: 10px;
+}
+.container .right .boxes .boxes-content .inf span.pres {
+    color: #999;
+    font-weight: 800;
+}
+.container .right .boxes .boxes-content .inf span.text {
+    color: black;
+    font-weight: 800;
+}
+.container .right .button {
+    width: 100%;
+    background-color: hsl(224, 30%, 27%);
+    border-radius: 25px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .right .button a{
+    text-decoration: none;
+    color: white;
+}
